@@ -1,34 +1,24 @@
+#**Exercício 0:** Escreva um programa que use a função `range()` para gerar os números pares de 2 a 20 e, em seguida, imprima cada número.
+pares = list(range(2, 20, 2))
+print(pares)
 
+#Exercício 1: Crie uma lista chamada numeros que contenha os números inteiros de 1 a 10 e imprima-a na tela.
+numeros = [1,2,3,4,5,6,7,8,9,10]
+print(numeros)
 
-# mercado
-#variavel - listas - i/o - sinais aritméticos e lógicos
+#Exercício 2: Acesse e imprima o terceiro elemento da lista numeros.
+print(numeros[3])
 
-print('E-commerce X')
+#Exercício 3: Adicione o número 9 à lista numeros e imprima a lista atualizada.
+numeros.append(9)
+print(numeros)
 
-produtos = ['', '1- HD', 
-            '2- Monitor', 
-            '3- Teclado',
-            '4- Iphone 17'
-            ]
+#**Exercício 4:** Remova o número 5 da lista `numeros` e imprima a lista resultante.
+numeros.remove(5)
+print(numeros)
 
-valores = [0, 500.0, 5000.0, 250.0, 14000.0]
+#Exercício 5: Crie uma lista chamada carros contendo três nomes de carros diferentes. Em seguida, concatene essa lista com a lista numeros e imprima o resultado.
+carros = ['Mustang', 'Ferrari', 'Fusca']
 
-print(f'''
-{produtos[1]} - R$ {valores[1]}
-{produtos[2]} - R$ {valores[2]}
-{produtos[3]} - R$ {valores[3]}
-{produtos[4]} - R$ {valores[4]}
-
-''')
-carrinho = []
-total = []
-produto_1 = int(input('Produto: '))
-produto_2 = int(input('Produto: '))
-produto_3 = int(input('Produto: '))
-
-carrinho.extend([produtos[produto_1], produtos[produto_2], produtos[produto_3]])
-total.extend([valores[produto_1], valores[produto_2], valores[produto_3]])
-print('***'*20)
-print('R$', sum(total))
-print('Produtos: ', carrinho)
-print('Obrigado Volte Sempre')
+carros.extend(numeros)
+print(carros)
